@@ -1,158 +1,155 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FONCIER.CI — Vérification ACD</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FONCIER.CI — Vérification ACD</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">FONCIER.CI</div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">FONCIER.CI</div>
 
-            <ul class="menu">
-     
-              <li><a href="index.html" class="lien-menu actif">Accueil</a></li>
-              <li><a href="Upload .html" class="lien-menu">Upload ACD</a></li>
-              <li><a href="verification.html" class="lien-menu">Vérification</a></li>
-              <li><a href="dashboard.html" class="lien-menu">Tableau de bord</a></li>
-              <li><a href="contact.html" class="lien-menu">Contact</a></li>
-          
-            </ul>
+      <ul class="menu">
 
-            <a href="#" class="btn-inscription">inscription</a>
-        </nav>
-    </header>
+        <li><a href="index.html" class="lien-menu actif">Accueil</a></li>
+        <li><a href="#" class="lien-menu">Vérification</a></li>
+        <li><a href="Dashboard.html" class="lien-menu">Tableau de bord</a></li>
+        <li><a href="contact.html" class="lien-menu">Contact</a></li>
+
+      </ul>
+
+      <a href="#" class="btn-inscription">inscription</a>
+    </nav>
+  </header>
 
 
-<section class="form-section" style="padding-top:100px;padding-bottom:80px;">
-  <div class="container">
+  <section class="form-section" style="padding-top:10px;padding-bottom:10px;">
 
-    <div class="form-wrapper">
-      <div class="form-header">
-        <div class="fh-label">Vérification officielle</div>
-        <h2>Contrôle d'authenticité ACD</h2>
-        <p>Service public et gratuit — accessible à tous les citoyens</p>
+    <div class="container-verif">
+
+      <div class="form-wrapper">
+        <div class="form-header">
+          <div class="fh-label">Vérification officielle</div>
+          <h2>Contrôle d'authenticité ACD</h2>
+          <p>Service public et gratuit — accessible à tous les citoyens</p>
+        </div>
+
+        <div class="form-body">
+
+          <div class="alert alert-info">
+            🔍 Ce service est <strong>gratuit et public</strong>. Tout citoyen peut vérifier l'authenticité d'un ACD
+            sans avoir besoin de créer un compte.
+          </div>
+
+          <form>
+
+            <div class="form-group">
+              <label class="form-label">Méthode de vérification <span class="required">*</span></label>
+              <div class="radio-grid" style="display: flex;">
+                <label class="radio-card">
+                  <input type="radio" name="verif_mode" value="numero" checked> 🔢 Numéro ACD
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="verif_mode" value="qr"> 📷 QR Code (scan)
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="verif_mode" value="gps"> 📍 Coordonnées GPS
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Numéro de l'ACD <span class="required">*</span></label>
+              <div class="input-icon-wrap">
+                <span class="iicon">🔢</span>
+                <input type="text" id="num-acd" placeholder="ex : CI-2026-00847-AB"
+                  style="font-family:'JetBrains Mono',monospace;letter-spacing:1px;">
+              </div>
+              <div class="form-hint">Le numéro ACD se trouve en haut du document, sous le titre officiel.</div>
+            </div>
+
+
+            <div class="form-group">
+              <label class="form-label">📷 Scanner un QR Code (optionnel)</label>
+              <label class="upload-zone" for="qr-file" style="padding:24px;">
+                <input type="file" id="qr-file" accept="image/*">
+                <div class="uz-icon">📷</div>
+                <h4>Uploader une image du QR Code</h4>
+                <p>Téléversez une photo du QR Code figurant sur l'ACD</p>
+                <div class="format-badges">
+                  <span class="fmt">JPG</span><span class="fmt">PNG</span>
+                </div>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">📍 Vérification par coordonnées GPS (optionnel)</label>
+              <div class="form-row" style="margin-bottom:0;">
+                <div class="form-group" style="margin-bottom:0;">
+                  <input type="text" placeholder="Latitude : ex 5.3600">
+                </div>
+                <div class="form-group" style="margin-bottom:0;">
+                  <input type="text" placeholder="Longitude : ex -3.9969">
+                </div>
+              </div>
+              <div class="form-hint">Vérifiez si un terrain enregistré correspond à ces coordonnées.</div>
+            </div>
+
+            <button type="button" id="btn-verif" class="btn btn-submit">
+              🔍 Lancer la vérification
+            </button>
+          </form>
+        </div>
+      </div>
+  </section>
+  <footer>
+
+    <div class="footer-content">
+
+      <div class="footer-col">
+        <h3>FONCIER.CI</h3>
+        <p>
+          Plateforme nationale de gestion et de délivrance
+          numérique des ACD en Côte d'Ivoire.
+        </p>
       </div>
 
-      <div class="form-body">
+      <div class="footer-col">
+        <h4>Plateforme</h4>
+        <a href="#">Retrouver votre ACD</a>
+        <a href="#">Nouveau ACD</a>
+        <a href="#">Vérification</a>
+      </div>
 
-        <div class="alert alert-info">
-          🔍 Ce service est <strong>gratuit et public</strong>. Tout citoyen peut vérifier l'authenticité d'un ACD sans avoir besoin de créer un compte.
-        </div>
+      <div class="footer-col">
+        <h4>Compte</h4>
+        <a href="#">Connexion</a>
+        <a href="#">Inscription</a>
+        <a href="#">Mon profil</a>
+      </div>
 
-        <form>
-          <!-- Méthode de vérification -->
-          <div class="form-group">
-            <label class="form-label">Méthode de vérification <span class="required">*</span></label>
-            <div class="radio-grid">
-              <label class="radio-card">
-                <input type="radio" name="verif_mode" value="numero" checked> 🔢 Numéro ACD
-              </label>
-              <label class="radio-card">
-                <input type="radio" name="verif_mode" value="qr"> 📷 QR Code (scan)
-              </label>
-              <label class="radio-card">
-                <input type="radio" name="verif_mode" value="blockchain"> ⛓️ Hash Blockchain
-              </label>
-              <label class="radio-card">
-                <input type="radio" name="verif_mode" value="gps"> 📍 Coordonnées GPS
-              </label>
-            </div>
-          </div>
+      <div class="footer-col">
+        <h4>Aide</h4>
+        <a href="#">Nous contacter</a>
+        <a href="#">FAQ</a>
+      </div>
 
-          <!-- Numéro ACD -->
-          <div class="form-group">
-            <label class="form-label">Numéro de l'ACD <span class="required">*</span></label>
-            <div class="input-icon-wrap">
-              <span class="iicon">🔢</span>
-              <input type="text" id="num-acd" placeholder="ex : CI-2026-00847-AB" style="font-family:'JetBrains Mono',monospace;letter-spacing:1px;">
-            </div>
-            <div class="form-hint">Le numéro ACD se trouve en haut du document, sous le titre officiel.</div>
-          </div>
+    </div>
 
-          <!-- Hash blockchain (optionnel) -->
-          <div class="form-group">
-            <label class="form-label">Hash Blockchain (optionnel)</label>
-            <input type="text" placeholder="ex : 0x3f8a2e9c1d3b47f6a..." style="font-family:'JetBrains Mono',monospace;font-size:.82rem;">
-            <div class="form-hint">Pour les ACD numériques, vous pouvez également vérifier via l'identifiant blockchain.</div>
-          </div>
+    <p class="copyright">
+      © 2025 FONCIER.CI - Tous droits réservés
+    </p>
 
-          <!-- QR Code upload -->
-          <div class="form-group">
-            <label class="form-label">📷 Scanner un QR Code (optionnel)</label>
-            <label class="upload-zone" for="qr-file" style="padding:24px;">
-              <input type="file" id="qr-file" accept="image/*">
-              <div class="uz-icon">📷</div>
-              <h4>Uploader une image du QR Code</h4>
-              <p>Téléversez une photo du QR Code figurant sur l'ACD</p>
-              <div class="format-badges">
-                <span class="fmt">JPG</span><span class="fmt">PNG</span>
-              </div>
-            </label>
-          </div>
-
-          <!-- Coordonnées GPS -->
-          <div class="form-group">
-            <label class="form-label">📍 Vérification par coordonnées GPS (optionnel)</label>
-            <div class="form-row" style="margin-bottom:0;">
-              <div class="form-group" style="margin-bottom:0;">
-                <input type="text" placeholder="Latitude : ex 5.3600">
-              </div>
-              <div class="form-group" style="margin-bottom:0;">
-                <input type="text" placeholder="Longitude : ex -3.9969">
-              </div>
-            </div>
-            <div class="form-hint">Vérifiez si un terrain enregistré correspond à ces coordonnées.</div>
-          </div>
-
-          <button type="button" id="btn-verif" class="btn btn-submit" onclick="showResult()">
-            🔍 Lancer la vérification
-          </button>
-        </form>
-
-<footer>
-
-        <div class="footer-content">
-
-            <div class="footer-col">
-                <h3>FONCIER.CI</h3>
-                <p>
-                    Plateforme nationale de gestion et de délivrance
-                    numérique des ACD en Côte d'Ivoire.
-                </p>
-            </div>
-
-            <div class="footer-col">
-                <h4>Plateforme</h4>
-                <a href="#">Retrouver votre ACD</a>
-                <a href="#">Nouveau ACD</a>
-                <a href="#">Vérification</a>
-            </div>
-
-            <div class="footer-col">
-                <h4>Compte</h4>
-                <a href="#">Connexion</a>
-                <a href="#">Inscription</a>
-                <a href="#">Mon profil</a>
-            </div>
-
-            <div class="footer-col">
-                <h4>Aide</h4>
-                <a href="#">Nous contacter</a>
-                <a href="#">FAQ</a>
-            </div>
-
-        </div>
-
-        <p class="copyright">
-            © 2025 FONCIER.CI - Tous droits réservés
-        </p>
-
-</footer>
+  </footer>
 
 </body>
+
 </html>

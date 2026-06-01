@@ -1,299 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Demande ACD</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demande ACD</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">FONCIER.CI</div>
+      <nav class="navbar">
+        <div class="logo">FONCIER.CI</div>
 
-            <ul class="menu">
-     
-              <li><a href="index.html" class="lien-menu actif">Accueil</a></li>
-              <li><a href="Upload .html" class="lien-menu">Upload ACD</a></li>
-              <li><a href="verification.html" class="lien-menu">Vérification</a></li>
-              <li><a href="dashboard.html" class="lien-menu">Tableau de bord</a></li>
-              <li><a href="contact.html" class="lien-menu">Contact</a></li>
-          
-            </ul>
+        <ul class="menu">
+          <li><a href="index.html" class="lien-menu actif">Accueil</a></li>
+          <li>
+            <a href="Verification .html" class="lien-menu">Vérification</a>
+          </li>
+          <li>
+            <a href="Dashboard.html" class="lien-menu">Tableau de bord</a>
+          </li>
+          <li><a href="contact.html" class="lien-menu">Contact</a></li>
+        </ul>
 
-            <a href="#" class="btn-inscription">inscription</a>
-        </nav>
+        <a href="#" class="btn-inscription">inscription</a>
+      </nav>
     </header>
-<div class="dashboard">
-
-    <!-- Sidebar -->
-    <aside class="sidebar">
-
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
         <div class="logo">
-            <h2>FONCIER.CI</h2>
-            <small>MINISTÈRE DE LA CONSTRUCTION</small>
+          <h2>FONCIER.CI</h2>
+          <small>MINISTÈRE DE LA CONSTRUCTION</small>
         </div>
 
         <ul>
-            <li>
-                <a href="#">
-                    <i class="fa fa-table"></i>
-                    Tableau de bord
-                </a>
-            </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-table"></i>
+              Tableau de bord
+            </a>
+          </li>
 
-            <li class="active">
-                <a href="#">
-                    <i class="fa fa-file"></i>
-                    Demande ACD
-                </a>
-            </li>
+          <li class="active">
+            <a href="#">
+              <i class="fa fa-file"></i>
+              Demande ACD
+            </a>
+          </li>
 
-            <li>
-                <a href="#">
-                    <i class="fa fa-folder"></i>
-                    Mes Dossiers
-                </a>
-            </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-folder"></i>
+              Mes Dossiers
+            </a>
+          </li>
         </ul>
+      </aside>
 
-    </aside>
-
-    <!-- Main -->
-    <main class="content">
-
+      <!-- Main -->
+      <main class="content">
         <div class="topbar">
-            <div></div>
+          <div></div>
 
-            <div class="user">
-                <div>
-                    <strong>M. Koffi Kouassi</strong><br>
-                    <small>Administrateur Foncier</small>
-                </div>
-
-                <img src="https://i.pravatar.cc/40" alt="">
+          <div class="user">
+            <div>
+              <strong>M. Koffi Kouassi</strong><br />
+              <small>Administrateur Foncier</small>
             </div>
+
+            <img src="https://i.pravatar.cc/40" alt="" />
+          </div>
         </div>
 
         <h2>Demande d'Arrêté de Concession Définitive (ACD)</h2>
 
         <p class="subtitle">
-            Remplissez les informations pour initier votre demande.
+          Remplissez les informations pour initier votre demande.
         </p>
 
         <!-- Steps -->
         <div class="steps">
+          <div class="step active">
+            <span>1</span>
+            <p>Détails</p>
+          </div>
 
-            <div class="step active">
-                <span>1</span>
-                <p>Détails</p>
-            </div>
+          <div class="line"></div>
 
-            <div class="line"></div>
+          <div class="step">
+            <span>2</span>
+            <p>Documents</p>
+          </div>
 
-            <div class="step">
-                <span>2</span>
-                <p>Documents</p>
-            </div>
+          <div class="line"></div>
 
-            <div class="line"></div>
-
-            <div class="step">
-                <span>3</span>
-                <p>Paiement</p>
-            </div>
-
+          <div class="step">
+            <span>3</span>
+            <p>Paiement</p>
+          </div>
         </div>
 
         <!-- Form -->
 
         <form>
+          <div class="card">
+            <h3>
+              <i class="fa fa-user"></i>
+              Informations du Demandeur
+            </h3>
 
-            <!-- Demandeur -->
+            <div class="grid">
+              <div>
+                <label>Nom et prénom</label>
+                <input type="text" />
+              </div>
 
-            <div class="card">
+              <div>
+                <label>Numéro de pièce</label>
+                <input type="text" />
+              </div>
 
-                <h3>
-                    <i class="fa fa-user"></i>
-                    Informations du Demandeur
-                </h3>
+              <div>
+                <label>Téléphone</label>
+                <input type="text" />
+              </div>
 
-                <div class="grid">
+              <div>
+                <label>Email</label>
+                <input type="email" />
+              </div>
+            </div>
 
-                    <div>
-                        <label>Nom et prénom</label>
-                        <input type="text">
-                    </div>
+            <label>Qualité du demandeur</label>
 
-                    <div>
-                        <label>Numéro de pièce</label>
-                        <input type="text">
-                    </div>
+            <select>
+              <option>Propriétaire Terrain</option>
+            </select>
+          </div>
 
-                    <div>
-                        <label>Téléphone</label>
-                        <input type="text">
-                    </div>
+          <div class="card">
+            <h3>
+              <i class="fa fa-map"></i>
+              Informations du Terrain
+            </h3>
 
-                    <div>
-                        <label>Email</label>
-                        <input type="email">
-                    </div>
+            <div class="grid">
+              <div>
+                <label>Numéro dossier ACD</label>
+                <input type="text" />
+              </div>
 
-                </div>
+              <div>
+                <label>Année attribution</label>
+                <input type="text" />
+              </div>
 
-                <label>Qualité du demandeur</label>
+              <div>
+                <label>District</label>
+                <input type="text" />
+              </div>
 
+              <div>
+                <label>Commune</label>
+                <input type="text" />
+              </div>
+
+              <div>
+                <label>Quartier</label>
+                <input type="text" />
+              </div>
+
+              <div>
+                <label>Lot</label>
+                <input type="text" />
+              </div>
+
+              <div>
+                <label>Superficie</label>
+                <input type="text" />
+              </div>
+
+              <div>
+                <label>Usage</label>
                 <select>
-                    <option>Propriétaire Terrain</option>
+                  <option>Habitation</option>
                 </select>
-
+              </div>
             </div>
+          </div>
 
-            <!-- Terrain -->
+          <div class="card">
+            <h3>
+              <i class="fa fa-location-dot"></i>
+              Coordonnées GPS
+            </h3>
 
-            <div class="card">
+            <img
+              class="map"
+              src="https://maps.geoapify.com/v1/staticmap?style=osm-carto"
+              alt="Carte"
+            />
 
-                <h3>
-                    <i class="fa fa-map"></i>
-                    Informations du Terrain
-                </h3>
+            <div class="grid">
+              <div>
+                <label>Latitude</label>
+                <input type="text" />
+              </div>
 
-                <div class="grid">
-
-                    <div>
-                        <label>Numéro dossier ACD</label>
-                        <input type="text">
-                    </div>
-
-                    <div>
-                        <label>Année attribution</label>
-                        <input type="text">
-                    </div>
-
-                    <div>
-                        <label>District</label>
-                        <input type="text">
-                    </div>
-
-                    <div>
-                        <label>Commune</label>
-                        <input type="text">
-                    </div>
-
-                    <div>
-                        <label>Quartier</label>
-                        <input type="text">
-                    </div>
-
-                    <div>
-                        <label>Lot</label>
-                        <input type="text">
-                    </div>
-
-                    <div>
-                        <label>Superficie</label>
-                        <input type="text">
-                    </div>
-
-                    <div>
-                        <label>Usage</label>
-                        <select>
-                            <option>Habitation</option>
-                        </select>
-                    </div>
-
-                </div>
-
+              <div>
+                <label>Longitude</label>
+                <input type="text" />
+              </div>
             </div>
+          </div>
 
-            <!-- GPS -->
+          <div class="actions">
+            <button class="btn-light">Enregistrer en brouillon</button>
 
-            <div class="card">
-
-                <h3>
-                    <i class="fa fa-location-dot"></i>
-                    Coordonnées GPS
-                </h3>
-
-                <img class="map"
-                src="https://maps.geoapify.com/v1/staticmap?style=osm-carto"
-                alt="Carte">
-
-                <div class="grid">
-
-                    <div>
-                        <label>Latitude</label>
-                        <input type="text">
-                    </div>
-
-                    <div>
-                        <label>Longitude</label>
-                        <input type="text">
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Buttons -->
-
-            <div class="actions">
-                <button class="btn-light">
-                    Enregistrer en brouillon
-                </button>
-
-                <button class="btn-primary">
-                  <a href="Upload .html">Continuer vers les documents</a>
-                </button>
-            </div>
-
+            <button class="btn-primary">
+              <a href="Upload .html">Continuer vers les documents</a>
+            </button>
+          </div>
         </form>
-
-    </main>
-
-</div>
+      </main>
+    </div>
     <footer>
-
-        <div class="footer-content">
-
-            <div class="footer-col">
-                <h3>FONCIER.CI</h3>
-                <p>
-                    Plateforme nationale de gestion et de délivrance
-                    numérique des ACD en Côte d'Ivoire.
-                </p>
-            </div>
-
-            <div class="footer-col">
-                <h4>Plateforme</h4>
-                <a href="#">Retrouver votre ACD</a>
-                <a href="#">Nouveau ACD</a>
-                <a href="#">Vérification</a>
-            </div>
-
-            <div class="footer-col">
-                <h4>Compte</h4>
-                <a href="#">Connexion</a>
-                <a href="#">Inscription</a>
-                <a href="#">Mon profil</a>
-            </div>
-
-            <div class="footer-col">
-                <h4>Aide</h4>
-                <a href="#">Nous contacter</a>
-                <a href="#">FAQ</a>
-            </div>
-
+      <div class="footer-content">
+        <div class="footer-col">
+          <h3>FONCIER.CI</h3>
+          <p>
+            Plateforme nationale de gestion et de délivrance numérique des ACD
+            en Côte d'Ivoire.
+          </p>
         </div>
 
-        <p class="copyright">
-            © 2025 FONCIER.CI - Tous droits réservés
-        </p>
+        <div class="footer-col">
+          <h4>Plateforme</h4>
+          <a href="#">Retrouver votre ACD</a>
+          <a href="#">Nouveau ACD</a>
+          <a href="#">Vérification</a>
+        </div>
 
+        <div class="footer-col">
+          <h4>Compte</h4>
+          <a href="#">Connexion</a>
+          <a href="#">Inscription</a>
+          <a href="#">Mon profil</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Aide</h4>
+          <a href="#">Nous contacter</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+
+      <p class="copyright">© 2025 FONCIER.CI - Tous droits réservés</p>
     </footer>
-
-</body>
+  </body>
 </html>
