@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FONCIER.CI — Créer un compte</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="barre-navigation">
+
+  <div class="conteneur-navigation">
+
+    <a href="index.html" class="logo-navigation">
+
+      <div class="icone-logo">🏛️</div>
+
+      <span class="texte-logo">
+        FONCIER<span class="logo-couleur">.CI</span>
+      </span>
+
+    </a>
+
+    <ul class="liste-navigation">
+
+      <li><a href="index.html" class="lien-navigation">Accueil</a></li>
+
+      <li><a href="upload.html" class="lien-navigation">Upload ACD</a></li>
+
+      <li><a href="verification.html" class="lien-navigation">Vérification</a></li>
+
+      <li><a href="dashboard.html" class="lien-navigation">Tableau de bord</a></li>
+
+      <li><a href="contact.html" class="lien-navigation">Contact</a></li>
+
+    </ul>
+
+    <div class="actions-navigation">
+
+      <a href="login.html" class="btn-petit-contour">
+        Connexion
+      </a>
+
+      <a href="register.html" class="btn-petit-plein">
+        Créer un compte
+      </a>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- PAGE INSCRIPTION -->
+<section class="page-inscription">
+
+  <div class="conteneur">
+
+    <div class="grille-inscription">
+
+      <!-- COTE GAUCHE -->
+      <div class="bloc-gauche">
+
+        <div class="contenu-gauche">
+
+          <div class="titre-logo-gauche">
+            FONCIER<span class="logo-couleur">.CI</span>
+          </div>
+
+          <h2>
+            Sécurisez votre<br>
+            patrimoine foncier
+          </h2>
+
+          <p>
+            Rejoignez la plateforme officielle
+            de gestion numérique des Actes
+            de Cession Définitive.
+          </p>
+
+          <!-- AVANTAGES -->
+          <div class="liste-avantages">
+
+            <div class="carte-avantage">
+
+              <span class="icone-avantage">🔐</span>
+
+              <div class="texte-avantage">
+
+                <span class="titre-avantage">
+                  Documents sécurisés
+                </span>
+
+                Chiffrement AES-256 pour protéger vos données.
+
+              </div>
+
+            </div>
+
+            <div class="carte-avantage">
+
+              <span class="icone-avantage">⚡</span>
+
+              <div class="texte-avantage">
+
+                <span class="titre-avantage">
+                  Traitement rapide
+                </span>
+
+                Validation des dossiers sous 48h ouvrables.
+
+              </div>
+
+            </div>
+
+            <div class="carte-avantage">
+
+              <span class="icone-avantage">🔗</span>
+
+              <div class="texte-avantage">
+
+                <span class="titre-avantage">
+                  Blockchain
+                </span>
+
+                Toutes les transactions sont traçables.
+
+              </div>
+
+            </div>
+
+            <div class="carte-avantage">
+
+              <span class="icone-avantage">📜</span>
+
+              <div class="texte-avantage">
+
+                <span class="titre-avantage">
+                  ACD numérique officiel
+                </span>
+
+                QR Code et signature électronique certifiée.
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="bas-gauche">
+          © 2026 FONCIER.CI — Plateforme Nationale Foncière
+        </div>
+
+      </div>
+
+      <!-- COTE DROIT -->
+      <div class="bloc-droit">
+
+        <h3 class="titre-formulaire">
+          Créer un compte
+        </h3>
+
+        <p class="texte-formulaire">
+          Remplissez les informations ci-dessous.
+        </p>
+
+        <!-- MESSAGE -->
+        <div class="boite-information">
+
+          ℹ️ Toutes les informations doivent correspondre
+          à vos documents officiels.
+
+        </div>
+
+        <!-- FORMULAIRE -->
+        <form action="dashboard.html" method="get">
+
+          <!-- TYPE DE COMPTE -->
+          <div class="groupe-formulaire">
+
+            <label class="label-formulaire">
+              Type de compte <span class="champ-obligatoire">*</span>
+            </label>
+
+            <div class="grille-radio">
+
+              <label class="carte-radio">
+
+                <input type="radio" name="type_compte" checked>
+
+                👤 Citoyen / Propriétaire
+
+              </label>
+
+              <label class="carte-radio">
+
+                <input type="radio" name="type_compte">
+
+                👨‍💼 Agent foncier
+
+              </label>
+
+            </div>
+
+          </div>
+
+          <!-- INFOS PERSONNELLES -->
+          <div class="titre-section-formulaire">
+            — Informations personnelles
+          </div>
+
+          <div class="ligne-formulaire">
+
+            <div class="groupe-formulaire">
+
+              <label class="label-formulaire">
+                Nom <span class="champ-obligatoire">*</span>
+              </label>
+
+              <input type="text" placeholder="ex : KONÉ" required>
+
+            </div>
+
+            <div class="groupe-formulaire">
+
+              <label class="label-formulaire">
+                Prénom <span class="champ-obligatoire">*</span>
+              </label>
+
+              <input type="text" placeholder="ex : Adama Bernard" required>
+
+            </div>
+
+          </div>
+
+          <div class="ligne-formulaire">
+
+            <div class="groupe-formulaire">
+
+              <label class="label-formulaire">
+                Date de naissance
+              </label>
+
+              <input type="date" required>
+
+            </div>
+
+            <div class="groupe-formulaire">
+
+              <label class="label-formulaire">
+                Sexe
+              </label>
+
+              <select required>
+
+                <option value="">Choisir</option>
+
+                <option>Masculin</option>
+
+                <option>Féminin</option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+          <!-- NATIONALITE -->
+          <div class="groupe-formulaire">
+
+            <label class="label-formulaire">
+              Nationalité
+            </label>
+
+            <select required>
+
+              <option>Ivoirienne</option>
+              <option>Burkinabé</option>
+              <option>Malienne</option>
+              <option>Guinéenne</option>
+
+            </select>
+
+          </div>
+
+          <!-- PIECE IDENTITE -->
+          <div class="titre-section-formulaire">
+            — Pièce d'identité
+          </div>
+
+          <div class="ligne-formulaire">
+
+            <div class="groupe-formulaire">
+
+              <label class="label-formulaire">
+                Type de pièce
+              </label>
+
+              <select required>
+
+                <option>CNI</option>
+                <option>Passeport</option>
+                <option>Carte de séjour</option>
+
+              </select>
+
+            </div>
+
+            <div class="groupe-formulaire">
+
+              <label class="label-formulaire">
+                Numéro de pièce
+              </label>
+
+              <input type="text" placeholder="CI-AB-2019-000456">
+
+            </div>
+
+          </div>
+
+          <!-- CONTACT -->
+          <div class="titre-section-formulaire">
+            — Coordonnées
+          </div>
+
+          <div class="groupe-formulaire">
+
+            <label class="label-formulaire">
+              Adresse e-mail
+            </label>
+
+            <div class="champ-icone">
+
+              <span class="icone-champ">✉️</span>
+
+              <input type="email" placeholder="email@gmail.com">
+
+            </div>
+
+          </div>
+
+          <div class="ligne-formulaire">
+
+            <div class="groupe-formulaire">
+
+              <label class="label-formulaire">
+                Téléphone principal
+              </label>
+
+              <div class="champ-icone">
+
+                <span class="icone-champ">📱</span>
+
+                <input type="tel" placeholder="+225 07 XX XX XX XX">
+
+              </div>
+
+            </div>
+
+            <div class="groupe-formulaire">
+
+              <label class="label-formulaire">
+                Téléphone secondaire
+              </label>
+
+              <input type="tel" placeholder="+225 05 XX XX XX XX">
+
+            </div>
+
+          </div>
+
+          <!-- ADRESSE -->
+          <div class="groupe-formulaire">
+
+            <label class="label-formulaire">
+              Adresse
+            </label>
+
+            <input type="text" placeholder="Quartier, commune, ville">
+
+          </div>
+
+          <div class="ligne-formulaire">
+
+            <div class="groupe-formulaire">
+
+              <label class="label-formulaire">
+                District
+              </label>
+
+              <select>
+
+                <option>Abidjan</option>
+                <option>Bouaké</option>
+                <option>Yamoussoukro</option>
+
+              </select>
+
+            </div>
+
+            <div class="groupe-formulaire">
+
+              <label class="label-formulaire">
+                Commune
+              </label>
+
+              <input type="text" placeholder="Cocody, Abobo...">
+
+            </div>
+
+          </div>
+
+          <!-- MOT DE PASSE -->
+          <div class="titre-section-formulaire">
+            — Sécurité du compte
+          </div>
+
+          <div class="groupe-formulaire">
+
+            <label class="label-formulaire">
+              Mot de passe
+            </label>
+
+            <input type="password" placeholder="Minimum 8 caractères">
+
+            <div class="texte-aide">
+              Une majuscule et un chiffre recommandés.
+            </div>
+
+          </div>
+
+          <div class="groupe-formulaire">
+
+            <label class="label-formulaire">
+              Confirmer le mot de passe
+            </label>
+
+            <input type="password" placeholder="Répéter le mot de passe">
+
+          </div>
+
+          <!-- UPLOAD -->
+          <div class="titre-section-formulaire">
+            — Scan de la pièce
+          </div>
+
+          <label class="zone-upload" for="piece-identite">
+
+            <input type="file" id="piece-identite">
+
+            <div class="icone-upload">🪪</div>
+
+            <h4>Téléverser votre pièce</h4>
+
+            <p>PDF, JPG ou PNG</p>
+
+            <div class="formats-fichier">
+
+              <span class="format">PDF</span>
+              <span class="format">JPG</span>
+              <span class="format">PNG</span>
+
+            </div>
+
+          </label>
+
+          <!-- CONDITIONS -->
+          <div class="groupe-formulaire">
+
+            <div class="groupe-checkbox">
+
+              <label class="ligne-checkbox">
+
+                <input type="checkbox" required>
+
+                <span>
+                  J'accepte les conditions d'utilisation.
+                </span>
+
+              </label>
+
+              <label class="ligne-checkbox">
+
+                <input type="checkbox">
+
+                <span>
+                  Accepter les notifications SMS et e-mail.
+                </span>
+
+              </label>
+
+              <label class="ligne-checkbox">
+
+                <input type="checkbox" required>
+
+                <span>
+                  Les informations fournies sont exactes.
+                </span>
+
+              </label>
+
+            </div>
+
+          </div>
+
+          <!-- BOUTON -->
+          <button type="submit" class="btn-inscription">
+
+            🚀 Créer mon compte
+
+          </button>
+
+        </form>
+
+        <!-- LIEN -->
+        <div class="lien-connexion">
+
+          Vous avez déjà un compte ?
+
+          <a href="login.html">
+            Se connecter
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>

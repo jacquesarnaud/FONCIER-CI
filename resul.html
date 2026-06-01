@@ -1,0 +1,132 @@
+
+        <!-- ── RÉSULTAT DE VÉRIFICATION ── -->
+        <div class="verif-result" id="verif-result">
+
+          <div class="alert alert-success" style="margin-top:0;">
+            ✅ <strong>ACD authentique et valide.</strong> Ce document est enregistré dans la base nationale FONCIER.CI.
+          </div>
+
+          <div class="acd-card">
+            <div class="acd-official">
+              <div class="acd-seal">🏛️</div>
+              <div>
+                <div class="acd-title">République de Côte d'Ivoire — Plateforme FONCIER.CI</div>
+                <div class="acd-subtitle">Acte de Cession Définitive Numérique — Certifié</div>
+              </div>
+            </div>
+
+            <div class="acd-fields">
+              <div class="acd-field">
+                <label>Numéro ACD</label>
+                <span class="mono">CI-2026-00847-AB</span>
+              </div>
+              <div class="acd-field">
+                <label>Date de délivrance</label>
+                <span>11 Mai 2026</span>
+              </div>
+              <div class="acd-field">
+                <label>Nom du propriétaire</label>
+                <span>M. KONÉ Adama Bernard</span>
+              </div>
+              <div class="acd-field">
+                <label>Superficie</label>
+                <span>480 m²</span>
+              </div>
+              <div class="acd-field">
+                <label>Localisation</label>
+                <span>Cocody, Abidjan — Lot 14, Ilot 7</span>
+              </div>
+              <div class="acd-field">
+                <label>Coordonnées GPS</label>
+                <span class="mono">5.3600° N, 3.9969° O</span>
+              </div>
+              <div class="acd-field">
+                <label>Usage déclaré</label>
+                <span>Résidentiel</span>
+              </div>
+              <div class="acd-field">
+                <label>Agent validateur</label>
+                <span>Agent Foncier N° AF-0047</span>
+              </div>
+            </div>
+
+            <div class="acd-qr-row">
+              <div class="qr-box">📱</div>
+              <div>
+                <div class="acd-hash">ID unique : f8a2-e9c1-3b47-d6f1<br>Blockchain : 0x3F8a2E9c...a9d2<br>Horodatage : 2026-05-11T14:32:07Z</div>
+              </div>
+              <div class="valid-stamp">
+                <div class="vs-icon">✅</div>
+                <span class="vs-text">VALIDE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Historique du terrain -->
+          <div style="background:#faf8f5;border:1px solid #e8e4dd;border-radius:var(--radius);padding:20px;margin-top:20px;">
+            <div style="font-size:.78rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--vert);margin-bottom:14px;">Historique du terrain</div>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Opération</th>
+                  <th>Responsable</th>
+                  <th>Statut</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="mono">2005-03-12</td>
+                  <td>Première cession (papier)</td>
+                  <td>Chef de village Cocody-Danga</td>
+                  <td><span class="badge badge-valide">Archivé</span></td>
+                </tr>
+                <tr>
+                  <td class="mono">2026-04-20</td>
+                  <td>Upload numérique</td>
+                  <td>M. KONÉ Adama</td>
+                  <td><span class="badge badge-valide">Reçu</span></td>
+                </tr>
+                <tr>
+                  <td class="mono">2026-05-08</td>
+                  <td>Validation agent foncier</td>
+                  <td>Agent AF-0047</td>
+                  <td><span class="badge badge-valide">Validé</span></td>
+                </tr>
+                <tr>
+                  <td class="mono">2026-05-11</td>
+                  <td>Délivrance ACD numérique</td>
+                  <td>Système FONCIER.CI</td>
+                  <td><span class="badge badge-valide">✅ Certifié</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="text-align:center;margin-top:20px;">
+            <a href="upload.html" class="btn btn-primary-lg" style="display:inline-flex;">☁️ Déposer mon propre ACD</a>
+          </div>
+        </div>
+
+        <!-- Résultat invalide (exemple) -->
+        <div style="background:#fff;border-radius:var(--radius-lg);border:1px solid #e8e4dd;padding:28px;margin-top:20px;display:none;" id="verif-invalid">
+          <div class="alert alert-danger" style="margin-bottom:0;">
+            ❌ <strong>Document non reconnu.</strong> Ce numéro ACD n'est pas enregistré dans la base nationale. Il peut s'agir d'un faux document ou d'un terrain non encore numérisé. Contactez nos services.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+function showResult() {
+  var val = document.getElementById('num-acd').value.trim();
+  if (val !== '') {
+    document.getElementById('verif-result').style.display = 'block';
+    document.getElementById('verif-result').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+}
+</script>
