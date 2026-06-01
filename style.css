@@ -17,6 +17,15 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+.btn-connexion{
+    background: #e6eae8;
+    color: #0a6e3f;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 .section-hero {
   background: #0f172a;
@@ -232,7 +241,7 @@ body {
 
 
 .container {
-  width: 95%;
+  width: 90%;
   margin: 20px auto;
   display: flex;
   background: white;
@@ -693,7 +702,237 @@ textarea {
   cursor: pointer;
   font-weight: 500;
 }
+/* inscription */
+.bloc-gauche{
+    background: #0b6b3a;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
 
+.titre-logo-gauche{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.logo-couleur{
+    color: #ffd700;
+}
+
+.bloc-gauche h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.bloc-gauche p{
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.liste-avantages{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.carte-avantage{
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+}
+
+.icone-avantage{
+    font-size: 25px;
+}
+
+.titre-avantage{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bas-gauche{
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+
+.bloc-droit{
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.titre-formulaire{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.texte-formulaire{
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.boite-information{
+    background: #e8f5e9;
+    padding: 15px;
+    border-left: 5px solid #0b6b3a;
+    margin-bottom: 20px;
+}
+
+
+.titre-section-formulaire{
+    margin: 25px 0 15px;
+    font-weight: bold;
+    color: #0b6b3a;
+}
+
+.groupe-formulaire{
+    margin-bottom: 20px;
+}
+
+.label-formulaire{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.champ-obligatoire{
+    color: red;
+}
+
+input,
+select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus,
+select:focus{
+    outline: none;
+    border-color: #0b6b3a;
+}
+
+.ligne-formulaire{
+    display: flex;
+    gap: 20px;
+}
+
+.ligne-formulaire .groupe-formulaire{
+    flex: 1;
+}
+
+
+.grille-radio{
+    display: flex;
+    gap: 20px;
+}
+
+.carte-radio{
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.champ-icone{
+    position: relative;
+}
+
+.icone-champ{
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+.champ-icone input{
+    padding-left: 40px;
+}
+
+
+.texte-aide{
+    font-size: 13px;
+    color: gray;
+    margin-top: 5px;
+}
+
+
+.zone-upload{
+    border: 2px dashed #0b6b3a;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.zone-upload input{
+    display: none;
+}
+
+.icone-upload{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.formats-fichier{
+    margin-top: 10px;
+}
+
+.format{
+    background: #0b6b3a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+
+.groupe-checkbox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ligne-checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+button.btn-inscription{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button.btn-inscription:hover{
+    background: #e6c200;
+}
+
+
+.lien-connexion{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.lien-connexion a{
+    color: #0b6b3a;
+    text-decoration: none;
+    font-weight: bold;
+}
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
